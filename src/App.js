@@ -1,13 +1,10 @@
 import './App.css';
-import {BasicTabs} from "./TabPanel/TabPanel";
-
+import {BasicTabs} from "./components/TabPanel/TabPanel";
 
 export function App() {
   return (
-
     <div className="App">
-        <BasicTabs/>
-
+       <BasicTabs/>
     </div>
   );
 }
