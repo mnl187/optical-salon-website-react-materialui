@@ -7,6 +7,8 @@ import Box from '@mui/material/Box';
 import {AboutUs} from "../../pages/AboutUs/AboutUs";
 import {HomePage} from '../../pages/Home/HomePage'
 import {Services} from "../../pages/Services/Services";
+import Icon from "@mui/material/Icon";
+import {Footer} from "../../pages/Footer/Footer";
 
 function TabPanel(props) {
     const {children, value, index, ...other} = props;
@@ -52,15 +54,34 @@ export const BasicTabs = () => {
         <Box sx={{width: '100%'}}>
             <Box sx={{borderBottom: 1, borderColor: 'divider'}}>
                 <Tabs value={value} onChange={handleChange} aria-label="basic tabs example">
-                    <Tab label="Home" {...a11yProps(0)} />
-                    <Tab label="O nas" {...a11yProps(1)} />
-                    <Tab label="Usługi" {...a11yProps(2)} />
-                    <Tab label="Produkty" {...a11yProps(3)} />
-                    <Tab label="Kontakt" {...a11yProps(4)} />
+                    <Tab
+                        label="Home"
+                        icon={<Icon>home</Icon>}
+                        {...a11yProps(0)}
+                    />
+                    <Tab
+                        label="O nas"
+                        icon={<Icon>group</Icon>}
+                        {...a11yProps(1)}
+                    />
+                    <Tab
+                        label="Usługi"
+                        icon={<Icon>miscellaneous_services_icon</Icon>}
+                        {...a11yProps(2)}
+                    />
+                    <Tab
+                        label="Produkty"
+                        icon={<Icon>shopping_cart</Icon>}
+                        {...a11yProps(3)}
+                    />
+                    <Tab
+                        label="Kontakt"
+                        icon={<Icon>contact_mail</Icon>}
+                        {...a11yProps(4)}
+                    />
                 </Tabs>
             </Box>
             <TabPanel value={value} index={0}>
-
                 <HomePage/>
             </TabPanel>
             <TabPanel value={value} index={1}>
@@ -75,6 +96,9 @@ export const BasicTabs = () => {
             <TabPanel value={value} index={4}>
                 Kontakt
             </TabPanel>
+            <Box>
+                <Footer/>
+            </Box>
         </Box>
     );
 }
