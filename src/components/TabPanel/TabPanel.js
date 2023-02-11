@@ -52,7 +52,11 @@ export const BasicTabs = () => {
 
     return (
         <Box sx={{width: '100%'}}>
-            <Box sx={{borderBottom: 1, borderColor: 'divider'}}>
+            <Box sx={{
+                borderBottom: 1,
+                borderColor: 'divider',
+                bgcolor: '#3E5059'
+            }}>
                 <Tabs value={value} onChange={handleChange} aria-label="basic tabs example">
                     <Tab
                         label="Home"
@@ -96,9 +100,7 @@ export const BasicTabs = () => {
             <TabPanel value={value} index={4}>
                 Kontakt
             </TabPanel>
-            <Box>
-                <Footer/>
-            </Box>
+            <Footer />
         </Box>
     );
 }

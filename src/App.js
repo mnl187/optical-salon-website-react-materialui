@@ -1,12 +1,13 @@
 import './App.css';
 import {BasicTabs} from "./components/TabPanel/TabPanel";
 import {ThemeProvider, createTheme} from '@mui/material/styles';
-import {blueGrey} from "@mui/material/colors";
+import * as React from "react";
 
 const theme = createTheme({
     palette: {
         primary: {
-            main: blueGrey[500],
+            main: '#96C2D9',
+            secondary: '#3E7F9F'
         }
     }
 });
