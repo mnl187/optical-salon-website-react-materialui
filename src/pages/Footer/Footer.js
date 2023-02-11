@@ -1,14 +1,14 @@
 import React from 'react';
 import {Typography} from '@mui/material';
-import {StyledFooter, StyledContainer} from './StyledFooter';
+import {FooterStyles, StyledContainer} from './FooterStyles';
 
 export const Footer = () => {
     return (
-        <StyledFooter>
+        <FooterStyles>
             <StyledContainer>
                     <Typography>Copyright © 2023 Strona WWW Salonu Optycznego</Typography>
             </StyledContainer>
-        </StyledFooter>
+        </FooterStyles>
 
     );
 };
