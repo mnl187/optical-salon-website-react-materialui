@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const StyledHomePage = styled.div`
-  background-color: #fff;
+  background-color: #B4C8CC;
   padding: 2rem;
   text-align: center;
 
